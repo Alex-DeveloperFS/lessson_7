@@ -377,3 +377,129 @@ body {
   top: 10px;
   z-index: 1;
 }
+
+/* constructor*/
+
+.constructor-box {
+  display: flex;
+  gap: 20px;
+
+}
+
+.box1 {}
+
+.block-fon1 {
+  position: relative;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 0;
+  background-color: aqua;
+  border: 3px solid black;
+  width: 206px;
+  height: 206px;
+}
+
+/* .block-fon1-box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+} */
+
+.block-fon1-element1 {
+  position: absolute;
+  margin: 0px;
+  background-color: green;
+  width: 50%;
+  height: 50%;
+  top: 0px;
+  left: 0px;
+}
+
+.block-fon1-element2 {
+  position: absolute;
+  margin: 0;
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  top: 0;
+  left: 100px;
+}
+
+.block-fon1-element3 {
+  position: absolute;
+  margin: 0;
+  background-color: black;
+  width: 50%;
+  height: 50%;
+  top: 100px;
+  left: 0;
+}
+
+.block-fon1-element4 {
+  position: absolute;
+  margin: 0;
+  background-color: saddlebrown;
+  width: 50%;
+  height: 50%;
+  top: 100px;
+  left: 100px;
+}
+
+.box2 {}
+
+.block-fon2 {
+  position: relative;
+  margin-top: 50px;
+  background-color: rgb(163, 163, 163);
+  border: 3px solid black;
+  width: 406px;
+  height: 206px;
+}
+
+.block-fon2-element1 {
+  position: absolute;
+  margin: 0;
+  background-color: rgb(160, 0, 0);
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.block-fon2-element2 {
+  position: absolute;
+  margin: 0;
+  background-color: rgb(55, 0, 175);
+  width: 35%;
+  height: 70%;
+  top: 75%;
+  right: 45%;
+
+}
+
+.block-fon2-element3 {
+  position: absolute;
+  margin: 0;
+  background-color: rgb(55, 0, 175);
+  width: 35%;
+  height: 70%;
+  top: 75%;
+  left: 60%;
+  z-index: -1;
+}
+
+.block-fon2-element4 {
+  position: absolute;
+  margin: 0;
+  background-color: rgb(55, 0, 175);
+  width: 35%;
+  height: 70%;
+  top: 75%;
+  left: -20%;
+  z-index: -1;
+}
+
+:root {
+  --size: 206px;
+}
