@@ -21,7 +21,7 @@ body {
 }
 
 .nav-link {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
   text-decoration: none;
@@ -379,32 +379,36 @@ body {
 }
 
 /* constructor*/
+:root{
+  --size: 206px;
+  --gap: 30px;
+}
 
 .constructor-box {
   display: flex;
-  gap: 20px;
-
+  gap: var(--gap);
+  margin-top: 20px;
+  justify-content: center;
 }
 
-.box1 {}
+.constructor-title{
+    margin-top: 20px;
+      margin-left: 10px;
+      padding-top: 40px;
+      text-align: center;
+
+}
 
 .block-fon1 {
   position: relative;
-  margin-top: 50px;
-  margin-left: 50px;
+  margin-top: var(--gap);
+  margin-left: var(--gap);
   margin-right: 0;
   background-color: aqua;
   border: 3px solid black;
-  width: 206px;
-  height: 206px;
+  width: var(--size);
+  height: var(--size);
 }
-
-/* .block-fon1-box {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  z-index: 1;
-} */
 
 .block-fon1-element1 {
   position: absolute;
@@ -412,8 +416,9 @@ body {
   background-color: green;
   width: 50%;
   height: 50%;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
+  transform: translate(0, 0);
 }
 
 .block-fon1-element2 {
@@ -423,7 +428,8 @@ body {
   width: 50%;
   height: 50%;
   top: 0;
-  left: 100px;
+  left: 0;
+  transform: translate(100%, 0);
 }
 
 .block-fon1-element3 {
@@ -432,8 +438,9 @@ body {
   background-color: black;
   width: 50%;
   height: 50%;
-  top: 100px;
+  top: 0;
   left: 0;
+  transform: translate(0, 100%);
 }
 
 .block-fon1-element4 {
@@ -442,29 +449,28 @@ body {
   background-color: saddlebrown;
   width: 50%;
   height: 50%;
-  top: 100px;
-  left: 100px;
+  top: 0;
+  left: 0;
+  transform: translate(100%, 100%);
 }
-
-.box2 {}
 
 .block-fon2 {
   position: relative;
-  margin-top: 50px;
+  margin-top: var(--gap);
   background-color: rgb(163, 163, 163);
   border: 3px solid black;
-  width: 406px;
-  height: 206px;
+  width: calc(var(--size) * 2);
+  height: var(--size);
 }
 
 .block-fon2-element1 {
   position: absolute;
   margin: 0;
   background-color: rgb(160, 0, 0);
-  top: 20px;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
+  top: 12%;
+  bottom: 12%;
+  left: 6%;
+  right: 6%;
 }
 
 .block-fon2-element2 {
@@ -473,8 +479,10 @@ body {
   background-color: rgb(55, 0, 175);
   width: 35%;
   height: 70%;
-  top: 75%;
-  right: 45%;
+  bottom: 0;
+  right: 0;
+  transform: translate(-245%, 65%);
+  z-index: -1;
 
 }
 
@@ -484,9 +492,9 @@ body {
   background-color: rgb(55, 0, 175);
   width: 35%;
   height: 70%;
-  top: 75%;
-  left: 60%;
-  z-index: -1;
+  bottom: 0;
+  left: 0;
+  transform: translate(55%, 65%);
 }
 
 .block-fon2-element4 {
@@ -495,11 +503,9 @@ body {
   background-color: rgb(55, 0, 175);
   width: 35%;
   height: 70%;
-  top: 75%;
-  left: -20%;
+  bottom: 0;
+  left: 0;
   z-index: -1;
+  transform: translate(170%, 65%);
 }
 
-:root {
-  --size: 206px;
-}
